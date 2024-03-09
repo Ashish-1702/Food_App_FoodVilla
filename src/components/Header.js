@@ -19,7 +19,7 @@ const Header=()=>{
         <div className="flex justify-between bg-pink-50 shadow-lg">
             <Title/>
             <div className="nav-links">
-                <ul className="flex py-10 p-2">
+                <ul className="flex py-10 p-2 m-2">
                     <Link to="/">
                        <li className="px-2">Home</li>
                     </Link>
@@ -33,6 +33,9 @@ const Header=()=>{
                     </Link>
                     <Link to="/Cart">
                        <li>Cart-{cartItems.length}</li>
+                    </Link>
+                    <Link to="/Login">
+                       <li>Login</li>
                     </Link>
                     {/* <Link to="/instamart">
                        <li className="px-2">Instamart</li>
