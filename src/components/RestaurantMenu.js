@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
   }
 
   return (
-    <div className="flex p-10 m-2 justify-between">
+    <div className="flex p-10 m-2 justify-between ">
       <div>
         <h1>Restaurant id :{id}</h1>
         <h2>{restaurant?.cards[2]?.card?.card?.info?.name}</h2>

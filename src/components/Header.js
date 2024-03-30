@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux";
 import Logo from "../assests/img/foodvilla.png";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 const Title=()=>(
     <a href="/">
@@ -33,7 +36,8 @@ const Header=()=>{
                        <li className="px-2">Contact</li>
                     </Link>
                     <Link to="/Cart">
-                       <li>Cart-{cartItems.length}</li>
+                       <li><FontAwesomeIcon icon={faShoppingCart} />{cartItems.length}</li>
+                       
                     </Link>
                     {/* <Link to="/Login">
                        <li>Login</li>
